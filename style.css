@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.navegacao {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    padding: 20px 40px;
+    box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-color: rgb(226, 152, 14);
+    transition: all 0.5;
+}
+
+.navegacao ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+    padding: 0;
+    margin: 0;
+    color:#f9f9f9 ;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.navegacao a {
+    text-decoration: none;
+    color: inherit;
+    padding: 10px 15px;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.left-home {
+    width: 55%; 
+    height: auto;
+    padding-right: 20px;
+    box-sizing: border-box; 
+}
+
+.right-home {
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    min-width: 300px; /
+}
+
+.right-home h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: rgb(226, 152, 14);
+}
+.right-home p {
+    font-size: 21px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.right-home img {
+    width: auto;
+    height: auto;
+    min-width: 250px; 
+    max-width: 100%; 
+    object-fit: contain; 
+}
+
+.products {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: rgb(226, 152, 14);
+}
+ 
+.images-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 50px;
+    background-color: rgb(226, 152, 14);
+    margin-top: 60px;
+}
+
+.image-box {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    background-color: transparent;
+    overflow: hidden;
+    margin: 0 20px;
+    margin-top: 10px;
+}
+
+.images-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.image-box:hover img {
+    transform: scale(1.05);
+}
+
+.products h1 {
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    margin-left: 20px;
+    color:#f9f9f9 ;
+}
+
+.products {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}  
+
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.review-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(226, 152, 14);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.review-box:hover {
+    transform: scale(1.02);
+}
+
+.reviewer-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+.reviewer-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    color: #f9f9f9;
+}
+
+.review-content {
+    flex-grow: 1;
+}
+
+.reviewer-name {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #f9f9f9;
+}
+
+.review-text {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #f9f9f9;
+}
+
+.reviews-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 40px 20px;
+}
+
+.reviews-title {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
