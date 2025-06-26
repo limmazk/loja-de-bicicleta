@@ -2,7 +2,7 @@
 
 
 
-Este projeto é uma landing page desenvolvida com HTML, CSS e JavaScript, representando uma loja fictícia de bicicletas. A página foi criada com foco em design responsivo e apresentação clara dos produtos.
+Este projeto é uma landing page desenvolvida com HTML e CSS , representando uma loja fictícia de bicicletas. A página foi criada com foco em design responsivo e apresentação clara dos produtos.
 
 ## Funcionalidades:
  
